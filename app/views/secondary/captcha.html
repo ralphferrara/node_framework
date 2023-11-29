@@ -1,0 +1,124 @@
+<section id="captchaWrapper" class="captcha">
+    <style>
+        section.captcha div.overlay {
+            position        : fixed;
+            display         : block;
+            background      : rgba(0,0,0,0.8);
+            top             : 0;
+            bottom          : 0;
+            left            : 0;
+            right           : 0;
+            z-index         : 9998;
+        }
+
+        section.captcha div.contain {
+            position        : fixed;
+            left            : 30%;
+            right           : 30%;
+            top             : 20%;
+            background      : rgba(255,255,255,1);
+            z-index         : 9999;
+            border-radius   : 10px 10px 10px 0;
+            vertical-align  : top;
+        }
+
+        section.captcha div.buttons {
+            display         : table;
+            vertical-align  : top;
+            text-align      : center;
+            width           : 80%;
+            margin          : 0 10% 20px;
+            height          : 50px;
+        }
+
+        section.captcha div.contain div.image {
+            width           : 100%;
+            border-radius   : 10px 10px 0 0;
+        }
+
+        section.captcha div.contain div.image a.close {
+            font-size       : 28px;
+            position        : fixed;
+            top             : 20%;
+            right            : 30%;
+            color           : #FFF;
+            padding         : 10px 15px;
+            background      : rgba(0,0,0,0.5);
+            cursor          : pointer;
+            text-decoration : none;
+        }
+
+        section.captcha div.contain img {
+            border-radius   : 10px 10px 0 0;
+            background-size : cover;
+            margin          : 0 auto;
+            display         : block;
+        }
+
+        section.captcha input.input {
+            display         : block;
+            width           : 80%;
+            font-size       : 140%;
+            padding         : 5px;
+            border          : 1px solid #CCC;
+            margin          : auto 10% 15px;
+            background      : #FFF;
+            text-align      : center;
+            color           : #333;
+            text-transform  : uppercase;
+        }
+
+        section.captcha button {
+            display         : table-cell;
+            width           : 40%;
+            height          : 100%;
+            vertical-align  : top;
+        }
+        section.captcha p {
+            padding         : 15px 10% 15px 10% ;
+            margin          : 0;
+            text-align      : center;
+            color           : #000;
+        }
+
+        section.captcha p span {
+            color           : #666;
+            display         : block;
+            margin-top      : 10px;
+            background      : rgba(200,200,200,0.2);
+            padding         : 3px 0;
+        }
+
+        section.captcha button#captchaRefresh {
+            opacity         : 0.5;
+            font-size       : 18px;
+            margin-right    : 10px;
+        }
+        @media (max-width: 800px) {
+            section.captcha div.contain {
+                left            : 2%;
+                right           : 2%;
+                top             : 10%;
+            }
+            section.captcha div.contain div.image a.close {
+                top             : 10%;
+                right           : 2%;
+            }
+        }
+    </style>
+
+
+        <div class="overlay"></div>
+        <div class="contain">
+            <div class="image" style="background-color:[[RGB]]">
+                <img width="300" height="120" id="captchaImage" src="[[CIMG]]" align="center">
+                <a class="close" href="javascript:void(0);">&#10006;</a>
+            </div>
+            <p>In order to prevent bots, spam skynet and other terrible things we unfortunately have to annoy you. Please enter the code seen above<span>Not case sensitive</span></p>
+            <input type="text" class="input" id="captchaCode" placeholder="Enter Text">
+            <div class="buttons">
+                <button type="button" id="captchaRefresh">↺</button>
+                <button type="button" id="captchaVerify">Verify</button>
+            </div>
+        </div>
+    </section>

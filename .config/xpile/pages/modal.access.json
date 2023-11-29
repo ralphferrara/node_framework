@@ -1,0 +1,8 @@
+{
+  "js": [
+    "modal/modal.access.js"
+  ],
+  "css": [
+    "modal/modal.access.css"
+  ]
+}

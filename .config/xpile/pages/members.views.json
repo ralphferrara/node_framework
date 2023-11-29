@@ -1,0 +1,13 @@
+{
+  "js": [
+    "precompile/lab.page.js",
+    "precompile/lab.media.js",
+    "members/views.js"
+  ],
+  "css": [
+    "precompile/lab.page.css",
+    "precompile/lab.media.css",
+    "common/feed.css",
+    "members/views.css"
+  ]
+}

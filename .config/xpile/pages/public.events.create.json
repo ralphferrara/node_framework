@@ -1,0 +1,10 @@
+{
+  "js": [
+    "precompile/lab.page.js",
+    "public/event-create.js"
+  ],
+  "css": [
+    "precompile/lab.page.css",
+    "public/event-create.css"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "Maestro",
+  "version": "0.1",
+  "description": "Maestro :: Balancer, Configuration, Template Caching, Console",
+  "dependencies": {
+    "mysql"         : "latest",
+    "redis"         : "latest",
+    "ws"            : "latest"
+ },
+  "author": "SCM"
+}

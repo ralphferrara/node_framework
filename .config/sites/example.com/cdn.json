@@ -1,0 +1,7 @@
+{
+  "css"      : "/assets/css/",
+  "js"       : "/assets/js/",
+  "static"   : "/assets/img/",
+  "media"    : "/assets/media/",
+  "video"    : "/assets/video/"
+}

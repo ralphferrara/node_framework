@@ -1,0 +1,9 @@
+{
+  "js": [
+    "precompile/lab.page.js",
+    "members/friends.js"
+  ],
+  "css": [
+    "precompile/lab.page.css"
+  ]
+}

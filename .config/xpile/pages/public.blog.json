@@ -1,0 +1,13 @@
+{
+  "js": [
+    "elements/comments.js",
+    "public/blog.js"
+  ],
+  "css": [
+    "common/forms.css",
+    "common/public.css",
+    "elements/comments.css",
+    "common/feed.css",
+    "public/blog.css"
+  ]
+}

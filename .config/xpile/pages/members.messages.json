@@ -1,0 +1,8 @@
+{
+  "js": [
+    "members/messages.js"
+  ],
+  "css": [
+    "members/messages.css"
+  ]
+}

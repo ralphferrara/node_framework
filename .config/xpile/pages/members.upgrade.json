@@ -1,0 +1,12 @@
+{
+  "js": [
+    "precompile/lab.page.js",
+    "members/upgrade.js"
+  ],
+  "css": [
+    "common/wrapper.confirm.css",
+    "common/wrapper.growl.css",
+    "precompile/lab.page.css",
+    "members/upgrade.css"
+  ]
+}

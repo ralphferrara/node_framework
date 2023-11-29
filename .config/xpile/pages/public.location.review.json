@@ -1,0 +1,12 @@
+{
+  "js": [
+    "common/rating.js",
+    "public/location.review.js"
+  ],
+  "css": [
+    "common/forms.css",
+    "common/rating.css",
+    "common/bs.datepicker.css",
+    "public/location.review.css"
+  ]
+}

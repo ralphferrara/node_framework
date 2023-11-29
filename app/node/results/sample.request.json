@@ -1,0 +1,16 @@
+{
+	"user" : {
+		"token" : "",
+		"id"    : ""
+	},
+	"area" : "GR",
+	"filter" : {
+		"search" : "Tester",
+		"status" : "public",
+		"media"  : "has"
+	},
+	"pagination" : {
+		"page" : 0,
+		"results" : 25
+	}
+}

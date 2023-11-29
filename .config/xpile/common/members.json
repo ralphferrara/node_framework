@@ -1,0 +1,10 @@
+{
+  "js": [
+    "common/members.js",
+    "common/bootstrap.min.js"
+  ],
+  "css": [
+    "common/member.css",
+    "common/results.css"
+  ]
+}

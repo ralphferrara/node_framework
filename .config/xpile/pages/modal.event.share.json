@@ -1,0 +1,8 @@
+{
+  "js": [
+    "modal/modal.event.share.js"
+  ],
+  "css": [
+    "modal/modal.event.share.css"
+  ]
+}

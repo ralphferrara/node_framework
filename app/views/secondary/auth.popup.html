@@ -1,0 +1,179 @@
+<section class="authpop grid-wrap" id="authPopupContainer">
+
+<style>
+
+    body.pagelab div.pagelab.content.login {
+        background              : url(/assets/img/sites/default/bg/login.jpg) no-repeat 0 0;
+        background-size         : cover;
+        background-repeat       : no-repeat;
+        margin                  : 0;
+        border-radius           : 20px;
+    }
+
+    div.pagelab.content.login section.grid-wrap {
+        display                 : grid;
+        height                  : 100%;
+        margin                  : 0;
+        grid-template-columns   : 70% 30%;
+        grid-template-rows      : 60% 40%;
+        background              : transparent;
+        grid-column-gap         : 0px;
+        grid-row-gap            : 0px;
+        padding                 : 0;
+
+    }
+
+    div.pagelab.content.login section.grid-wrap .grid-box {
+        position                : relative;
+        vertical-align          : middle;
+        text-align              : center;
+    }
+
+    div.pagelab.content.login section.grid-wrap .grid-box .center {
+        padding                 : 10px;
+    }
+
+    div.pagelab.content.login section.grid-wrap .grid-box {
+        background              : var(--bg-panel);
+    }
+
+    div.pagelab.content.login section.grid-wrap .grid-box.bg2,
+    div.pagelab.content.login section.grid-wrap .grid-box.bg4 {
+        background              : rgba(0,0,0,0.4);
+    }
+
+    div.pagelab.content.login section.login .login   { display : block !important; }
+    div.pagelab.content.login section.login .signup  { display : none;  }
+    div.pagelab.content.login section.login .reset   { display : none; }
+    div.pagelab.content.login section.login .phone   { display : none;  }
+    div.pagelab.content.login section.login .logout  { display : none; }
+
+    div.pagelab.content.login section.logout .logout  { display : block !important; }
+    div.pagelab.content.login section.logout .login  { display : none;  }
+    div.pagelab.content.login section.logout .signup  { display : none;  }
+    div.pagelab.content.login section.logout .reset   { display : none; }
+    div.pagelab.content.login section.logout .phone   { display : none;  }
+
+    div.pagelab.content.login section.signup .signup { display : block !important;  }
+    div.pagelab.content.login section.signup .login  { display : none; }
+    div.pagelab.content.login section.signup .reset  { display : none; }
+    div.pagelab.content.login section.signup .phone  { display : none; }
+    div.pagelab.content.login section.signup .logout  { display : none; }
+
+    div.pagelab.content.login section.reset .reset   { display : block !important; }
+    div.pagelab.content.login section.reset .signup  { display : none;  }
+    div.pagelab.content.login section.reset .login   { display : none; }
+    div.pagelab.content.login section.reset .phone   { display : none; }
+    div.pagelab.content.login section.reset .logout  { display : none; }
+
+    div.pagelab.content.login section.phone .phone   { display : block !important; }
+    div.pagelab.content.login section.phone .signup  { display : none;  }
+    div.pagelab.content.login section.phone .login   { display : none; }
+    div.pagelab.content.login section.phone .reset   { display : none; }
+    div.pagelab.content.login section.phone .logout  { display : none; }
+
+</style>
+
+
+    <div class="grid-box">
+
+        <div class="center" id="mainInfo">
+            <h1 class="logout">{{PTX[^logup.header.logout]}}</h1>
+            <p class="wc60 logout">{{BTX[^logup.logout]}}</p>
+
+            <h1 class="phone">{{PTX[^logup.header.phone]}}</h1>
+            <p class="wc60 phone">{{BTX[^logup.phone]}}</p>
+
+            <h1 class="signup">{{PTX[^logup.header.signup]}}</h1>
+            <p class="wc60 signup">{{BTX[^logup.signup]}}</p>
+
+            <h1 class="login">{{PTX[^logup.header.login]}}</h1>
+            <p class="wc60 login">{{BTX[^logup.login]}}</p>
+
+            <h1 class="reset">{{PTX[^logup.header.reset]}}</h1>
+            <p class="wc60 reset">{{BTX[^logup.reset]}}</p>
+            <input type="text" id="apCSRF" name="apCSRF" value="{{CSRFTOKEN}}">
+            <label class="wc50 mt10 signup reset">{{WTX[^email]}}</label>
+            <label class="wc50 mt10 login">{{WTX[^email]}}/{{WTX[^username]}}</label>
+            <label class="wc50 mt10 phone">{{WTX[^phone]}}</label>
+            <input class="wc50 mt6 phone" type="text" id="apPhone" name="phone" placeholder="{{WTX[^phone]}}" autocomplete="phone">
+            <input class="wc50 mt6 login" type="text" id="apLogin" name="email" placeholder="{{WTX[^email]}}/{{WTX[^username]}}" autocomplete="username email">
+            <input class="wc50 mt6 signup reset" type="text" id="apEmail" name="email" placeholder="{{WTX[^email]}}" autocomplete="email">
+            <label class="login wc50 mt10">{{WTX[^password]}}</label>
+            <input class="login wc50 mt6"  id="apPassword" type="password" name="password" placeholder="{{WTX[^password]}}" autocomplete="password">
+            <button id="submitLogout" class="logout colorA wc50 mt20">{{WTX[^logout]}}</button>
+            <button id="submitPhone" class="phone colorA wc50 mt20">{{WTX[^connect]}}</button>
+            <button id="submitLogin" class="login colorA wc50 mt20">{{WTX[^login]}}</button>
+            <button id="submitSignup" class="signup colorA wc50 mt20">{{PTX[^logup.button.over18]}}</button>
+            <button id="submitReset" class="reset colorA wc50 mt20">{{WTX[^reset]}}</button>
+        </div>
+    </div>
+
+    <div class="grid-box bg2">
+        <div class="center mt40 reset">
+            <h3>{{PTX[^logup.header.login]}}</h3>
+            <p>{{BTX[^logup.login]}}</p>
+            <button class="swapLogin colorB wc70 mt10">{{PTX[^logup.button.login]}}</button>
+        </div>
+        <div class="center mt40 signup">
+            <h3>{{PTX[^logup.header.login]}}</h3>
+            <p>{{BTX[^logup.login]}}</p>
+            <button class="swapLogin colorB wc70 mt10">{{PTX[^logup.button.login]}}</button>
+        </div>
+        <div class="center mt40 login phone">
+            <h3>{{PTX[logup.header.signup]}}</h3>
+            <p>{{BTX[^logup.signup]}}</p>
+            <button class="swapSignup colorB wc70 mt10">{{PTX[^logup.button.signup]}}</button>
+        </div>
+        <div class="center mt40 logout">
+            <h3>{{PTX[logup.header.logout]}}</h3>
+            <img class="avatar" src="#" style="margin:auto; width:100px;height:100px;display:block;"><br>
+            <a class="username">My Username</a>
+
+        </div>
+    </div>
+
+    <div class="grid-box">
+        <div class="center mt20 signup">
+            <button class="social phone wc60 mt10 swapSignup">{{WTX[^signup]}} {{PTX[logup.button.socialEM]}}</button>
+            <button class="social signup wc60 mt10 swapPhone">{{WTX[^signup]}} {{PTX[logup.button.socialPH]}}</button>
+            <button class="social signup wc60 mt10">{{WTX[^signup]}} {{PTX[logup.button.socialF]}}</button>
+            <button class="social signup wc60 mt10">{{WTX[^signup]}} {{PTX[logup.button.socialG]}}</button>
+            <button class="social signup wc60 mt10">{{WTX[^signup]}} {{PTX[logup.button.socialT]}}</button>
+        </div>
+        <div class="center mt20 login">
+            <button class="social login wc60 mt10 swapPhone">{{WTX[^login]}} {{PTX[logup.button.socialPH]}}</button>
+            <button class="social login phone wc60 mt10">{{WTX[^login]}} {{PTX[logup.button.socialF]}}</button>
+            <button class="social login phone wc60 mt10">{{WTX[^login]}} {{PTX[logup.button.socialG]}}</button>
+            <button class="social login phone wc60 mt10">{{WTX[^login]}} {{PTX[logup.button.socialT]}}</button>
+        </div>
+        <div class="center mt20 phone">
+            <button class="social phone wc60 mt10 swapLogin">{{WTX[^login]}} {{PTX[logup.button.socialEM]}}</button>
+            <button class="social login phone wc60 mt10">{{WTX[^login]}} {{PTX[logup.button.socialF]}}</button>
+            <button class="social login phone wc60 mt10">{{WTX[^login]}} {{PTX[logup.button.socialG]}}</button>
+            <button class="social login phone wc60 mt10">{{WTX[^login]}} {{PTX[logup.button.socialT]}}</button>
+        </div>
+
+    </div>
+
+    <div class="grid-box bg4">
+        <div class="center login phone">
+            <h4>{{PTX[^logup.header.reset]}}</h4>
+            <p>{{BTX[^logup.reset]}}</p>
+            <button class="swapReset colorC mt10">{{PTX[^logup.button.reset]}}</button>
+        </div>
+
+        <div class="center signup">
+            <h4>{{PTX[^logup.header.reset]}}</h4>
+            <p>{{BTX[^logup.reset]}}</p>
+            <button class="swapReset colorC mt10">{{PTX[^logup.button.reset]}}</button>
+        </div>
+
+        <div class="center reset">
+            <h4>{{PTX[^logup.header.signup]}}</h4>
+            <p>{{BTX[^logup.signup]}}</p>
+            <button class="swapSignup colorC mt10">{{PTX[^logup.button.signup]}}</button>
+        </div>
+
+    </div>
+</section>

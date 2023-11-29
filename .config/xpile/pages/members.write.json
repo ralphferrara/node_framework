@@ -1,0 +1,13 @@
+{
+  "js": [
+    "precompile/lab.page.js",
+    "common/selection.js",
+    "common/wysiwyg.js",
+    "members/blogs.js"
+  ],
+  "css": [
+    "precompile/lab.page.css",
+    "common/forms.css",
+    "common/wysiwyg.css"
+  ]
+}

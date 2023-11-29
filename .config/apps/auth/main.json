@@ -1,0 +1,10 @@
+{
+  "name"    : "auth",
+  "port"    : "8802",
+  "version" : 0.1,
+  "ssl"     : {
+    "active"  : true,
+    "SSLKeyFile"   : "",
+    "SSLKeyCert"   : ""
+  }
+}

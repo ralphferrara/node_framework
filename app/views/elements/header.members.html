@@ -1,0 +1,27 @@
+<section class="header">
+
+    <header class="logo">
+        <ul>
+            <li class="logo"><a href="/members/"><img alt="Logo" src="/assets/img/place/logo.png"></a></li>
+        </ul>
+    </header>
+
+    <header class="secondary">
+        <ul>
+            <li class="area selected" data-area="home" title="Home"><i class="fas fa-house-user"></i></li>
+            <li class="area" data-area="forum" title="Forum" onclick="$('results').fetch('GR', '');"><i class="fab fa-wpforms"></i></li>
+            <li class="area" data-area="blogs" title="Blogs"><i class="fas fa-rss-square"></i></li>
+        </ul>
+    </header>
+
+    <header class="primary">
+        <ul>
+            <li class="account button publish" onclick="$('members').navMe('publish');"><i class="fas fa-plus"></i></li>
+            <li class="account button search" onclick="$('members').navMe('search');"><i class="fas fa-search"></i></li>
+            <li class="account button messages" onclick="$('members').navMe('messages');"><i class="fas fa-envelope-open"></i></li>
+            <li class="account button activity" onclick="$('members').navMe('activity');"><i class="fas fa-bell"></i></li>
+            <li class="account button me" data-area="account" title="My Account" onclick="$('members').navMe('menu');"><i class="profile-pic" style="background-image:url(/assets/img/place/profile.small.jpg)"></i></li>
+        </ul>
+    </header>
+
+</section>

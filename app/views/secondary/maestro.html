@@ -1,0 +1,91 @@
+<style>
+    section.admin {
+        position        : fixed;
+        background      : #FFF;
+        padding         : 20px;
+        width           : 70%;
+        margin          : 10px auto;
+        left            : 10px;
+    }
+    section.admin :is(h1,h2,h3,h4,h5) {
+        color           : #999;
+    }
+
+    section.admin table.main {
+        width           : 100%;
+        padding         : 5px;
+        text-align      : center;
+    }
+
+    section.actions {
+        position        : fixed;
+        padding         : 20px;
+        width           : 30%;
+        margin          : 0;
+        right           : 0;
+    }
+    section.actions {
+        color           : #666;
+    }
+    section.actions :is(h1,h2,h3,h4,h5,p) {
+        color           : #999;
+
+    }
+
+    button.pull {
+        background      : #666;
+        color           : #FFF;
+        border          : 0px;
+    }
+
+    section.actions li {
+        display         : block;
+        text-align      : center;
+        border-bottom   : 1px solid #DDD;
+        padding         : 20px;
+    }
+</style>
+
+<section class="admin">
+    <table class="main">
+        <tr>
+            <td>
+                <h2>CPU Utilization</h2>
+                <h3 id="cpu">-</h3>
+
+            </td>
+            <td>
+                <h2>Disk Free</h2>
+                <h3 id="diskFree">-</h3>
+            </td>
+            <td>
+                <h2>Memory Utilization</h2>
+                <h3 id="memoryTotal">-</h3>
+                <h4 style="display:inline-block;" id="memoryFree">-</h4>
+                <h4 style="color:#333; display:inline-block;" id="memoryUsage">-</h4>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <h2>Templates</h2>
+                <h4 style="display:inline-block;" id="templateCount">-</h4>
+                <h4 style="color:#333; display:inline-block;" id="templateSize">-</h4>
+            </td>
+            <td colspan="2">
+                <h2>Files</h2>
+                <table id="templateList"></table>
+            </td>
+        </tr>
+
+    </table>
+</section>
+<section class="actions">
+    <h2>Utilities</h2>
+    <li><p>Usage</p><button id="callUsage">Reload Usage</button></li>
+    <li><p>Purge Redis</p><button id="callPurgeRedis">Clear Entire Redis DB</button></li>
+    <li><p>Template System</p><button id="callTemplatesReload">Reload All Templates</button></li>
+</section>
+
+
+

@@ -1,0 +1,12 @@
+{
+  "js": [
+    "precompile/lab.page.js",
+    "modal/modal.blog.view.js",
+    "elements/flags.js",
+    "elements/likes.js"
+  ],
+  "css": [
+    "precompile/lab.page.css",
+    "modal/modal.blog.view.css"
+  ]
+}

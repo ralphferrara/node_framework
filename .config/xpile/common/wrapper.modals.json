@@ -1,0 +1,17 @@
+{
+  "js": [
+    "common/jquery.19.1.min.js",
+    "common/wrapper.js",
+    "common/moment.min.new.js",
+    "common/wrapper.growl.js",
+    "common/wrapper.confirm.js",
+    "common/facebook.button.js",
+    "common/modals.js",
+    "common/wrapper.captcha.js"
+  ],
+  "css": [
+    "common/modals.css",
+    "common/wrapper.growl.css",
+    "common/wrapper.confirm.css"
+  ]
+}

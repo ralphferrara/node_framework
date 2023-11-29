@@ -1,0 +1,8 @@
+{
+  "js": [
+    "common/excanvas.min.js",
+    "common/html5shiv.js",
+    "common/respond.min.js"
+  ],
+  "css": []
+}

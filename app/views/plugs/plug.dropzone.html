@@ -1,0 +1,30 @@
+<div class="plug dropzone" id="[ID]">
+    <div class="splash" id="dropArea">
+                <i class="icon fas fa-upload"></i>
+        <h3>Drag Here to upload</h3>
+        <h4 class="invalid">Invalid File type uploaded</h4>
+        <h4 class="maxed">Maximum number of attachments reached</h4>
+    </div>
+
+    <div class="menu">
+        <input type="file" class="uploadElement" name="files[]" multiple>
+        <input type="file" capture="camera" class="cameraElement" accept="image/*;capture=camera">
+        <button class="browse"><i class="fa fa-laptop"></i> Browse</button>
+        <button class="camera"><i class="fa fa-camera"></i> Camera</button>
+    </div>
+    <div class="ready">
+        <div class="list"></div>
+    </div>
+    <div class="complete">
+        <li><span class="counter">0</span> file(s) to upload</li>
+        <li><button class="attach"><i class="fa fa-plus"></i> Attach</button></li>
+    </div>
+</div>
+
+<template id="plug_dropzone_preview_image">
+    <li>
+        <span><img></span>
+        <p></p>
+        <a><i class="fa fa-times"></i></a>
+    </li>
+</template>

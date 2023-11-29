@@ -1,0 +1,8 @@
+{
+  "js": [
+    "modal/modal.group.js"
+  ],
+  "css": [
+    "modal/modal.group.css"
+  ]
+}

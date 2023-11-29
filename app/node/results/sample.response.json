@@ -1,0 +1,27 @@
+{
+  "area": "GR",
+  "header": "Featured Groups",
+  "results": {
+    "0": {
+      "id": "8997",
+      "url": "/group/group1",
+      "status": "subscribed",
+      "featured": false,
+      "liked": true,
+      "html": "<div class='container'></div>"
+    },
+    "1": {
+      "id": "33212",
+      "url": "/group/group2",
+      "status": "subscribed",
+      "featured": false,
+      "liked": true,
+      "html": "<div class='container'></div>"
+    }
+  },
+  "pagination": {
+    "page": 0,
+    "total": 25,
+    "results": 25
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "js": [
+    "members/events.js"
+  ],
+  "css": [
+    "members/events.css"
+  ]
+}

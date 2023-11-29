@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Admin</title>
+    <meta name="description" content="SEO">
+    <meta name="author" content="SCM">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7ab51738eb.js" crossorigin="anonymous"></script>
+
+
+
+    <link rel="stylesheet" href="/assets/css/global/reset.css?v=1.0">
+    <link rel="stylesheet" href="/assets/css/global/elements.css">
+    <link rel="stylesheet" href="/assets/css/global/attributes.css">
+    <link rel="stylesheet" href="/assets/css/global/loader.css">
+    <link rel="stylesheet" href="/assets/css/global/pagelab.css">
+
+    <link rel="stylesheet" href="/assets/css/main/members.css?v=1.0">
+    <link rel="stylesheet" href="/assets/css/main/buttons.css?v=1.0">
+
+
+    <link rel="stylesheet" href="/assets/css/members/header.css?v=1.0">
+</head>
+<body class="members">
+
+<div class="members">
+    <header>
+        <div class="col col1">
+            <ul>
+                <li class="logo"><a href="/members"><img src="/assets/img/place/logo.png"></a></li>
+            </ul>
+        </div>
+        <div class="col col2">
+            <ul>
+                <li class="area selected" data-area="home" title="Home"><i class="fas fa-house-user"></i></li>
+                <li class="area" data-area="forum" title="Forum" onclick="$('results').fetch('GR', '');"><i class="fab fa-wpforms"></i></li>
+                <li class="area" data-area="groups" title="Groups"><i class="fas fa-user-friends"></i></li>
+                <li class="area" data-area="locations" title="Locations"><i class="fas fa-map-signs"></i></li>
+                <li class="area" data-area="events" title="Events"><i class="fas fa-calendar-alt"></i></li>
+                <li class="area" data-area="gallery" title="Gallery"><i class="fas fa-photo-video"></i></li>
+                <li class="area" data-area="blogs" title="Blogs"><i class="fas fa-rss-square"></i></li>
+                <li class="area" data-area="search" title="Search"><i class="fas fa-search"></i></li>
+            </ul>
+        </div>
+        <div class="col col3">
+            <ul>
+                <li class="account" data-area="account" title="My Account"><i class="profile-pic" style="background-image:url(/assets/img/place/profile.small.jpg)"></i></li>
+                <li class="account button"><i class="fas fa-plus"></i></li>
+                <li class="account button"><i class="fas fa-envelope-open"></i></li>
+                <li class="account button"><i class="fas fa-bell"></i></li>
+            </ul>
+        </div>
+    </header>
+
+    <style>
+
+
+        /*---------------------------------------------------------------------------------------------------------------------||
+        -| Main
+        -----------------------------------------------------------------------------------------------------------------------||*/
+
+        main {
+            display         : block;
+            position        : fixed;
+            top             : 60px;
+            left            : 0;
+            right           : 0;
+            width           : 100%;
+            bottom          : 0;
+        }
+
+        main section {
+            display         : table;
+            height          : 100%;
+            width           : 100%;
+        }
+
+        main div.col {
+            display         : table-cell;
+            vertical-align  : top;
+            overflow-y      : auto;
+            text-align      : left;
+        }
+
+        main div.col1 {
+            width           : 20%;
+            font-size       : 100%;
+        }
+
+        main div.col2 {
+            width           : 60%;
+        }
+
+        main div.col3 {
+            width           : 20%;
+        }
+
+        /*---------------------------------------------------------------------------------------------------------------------||
+        -| Div 1 - Profile
+        -----------------------------------------------------------------------------------------------------------------------||*/
+
+        div.col1 div.profile {
+            display     : table;
+            width       : 100%;
+            height      : 50px;
+            padding     : 10px 0;
+        }
+
+        div.col1 div.profile a {
+            display     : table-cell;
+            vertical-align : middle;
+            text-decoration : none;
+            color           : #111;
+        }
+
+        div.col1 div.profile a.profile-pic {
+            width       : 60px;
+            text-align  : center;
+        }
+
+        div.col1 div.profile i {
+            display         : inline-block;
+            width           : 30px;
+            height          : 30px;
+            border-radius   : 50%;
+            background-size   : cover;
+        }
+
+        /*---------------------------------------------------------------------------------------------------------------------||
+        -| Div 1 - Filters / Subareas
+        -----------------------------------------------------------------------------------------------------------------------||*/
+
+        ul.subsections {
+            margin-top  : 10px;
+            width       : 100%;
+            padding     : 0 10px;
+        }
+
+        ul.subsections li {
+            padding     : 5px 0 5px 10px;
+            color       : #666;
+            font-size   : 100%;
+        }
+
+        ul.subsections li.selected {
+            background  : rgba(200,200,200,0.3);
+            border-radius : 10px;
+        }
+
+        ul.subsections li i {
+            display     : inline-block;
+            width       : 30px;
+            height      : 30px;
+            padding-top : 9px;
+            text-align  : center;
+            margin-right: 20px;
+            background  : #333;
+            border-radius : 50%;
+        }
+
+        div.col1 h3 {
+            margin-top  : 20px;
+            font-size   : 90%;
+            color       : #333;
+            padding     : 0 0 0 10px;
+        }
+
+        /*---------------------------------------------------------------------------------------------------------------------||
+        -| Div 1 - Filters / Subareas
+        -----------------------------------------------------------------------------------------------------------------------||*/
+
+        div.col1 footer {
+            font-family : Tahoma, Helvetica, sans-serif;
+            position    : absolute;
+            bottom      : 0;
+            text-align  : center;
+            font-size   : 10px;
+            padding     : 0 20px 10px;
+            line-height : 15px;
+            color       : #888;
+            width           : 20%;
+            letter-spacing  : 1.05px;
+        }
+
+        div.col1 footer a {
+            color       : #999;
+        }
+
+        /*---------------------------------------------------------------------------------------------------------------------||
+        -| Div 2 - Articles
+        -----------------------------------------------------------------------------------------------------------------------||*/
+
+        main div.col2 {
+            padding     : 20px 20px 0;
+        }
+
+        article {
+            display     : block;
+            width       : 100%;
+            border      : 1px solid #CCC;
+            background  : #FFF;
+            border-radius : 10px 10px 0 0;
+        }
+
+        /*---------------------------------------------------------------------------------------------------------------------||
+        -| Div 2 - Articles HEADER
+        -----------------------------------------------------------------------------------------------------------------------||*/
+
+        article div.header {
+            display     : block;
+            width       : 100%;
+            margin-top  : 10px;
+        }
+
+        article div.header ul {
+            display     : table;
+            list-style  : none;
+            width       : 100%;
+        }
+
+        article div.header ul li {
+            display     : table-cell;
+            list-style  : none;
+            padding     : 10px 0;
+            vertical-align : middle;
+        }
+
+        article div.header li.profile-pic {
+            width       : 60px;
+            text-align  : center;
+        }
+
+        article div.header li.profile-pic a {
+            display     : inline-block;
+            text-align  : center;
+        }
+
+        article div.header li.user{
+            font-size   : 80%;
+            text-align  : left;
+        }
+
+        article div.header li.user i {
+            display     : block;
+            color       : #CCC;
+            font-size   : 75%;
+            padding     : 5px 0;
+        }
+
+        article div.header li.menu {
+            width       : 60px;
+            text-align  : center;
+        }
+
+        article div.header li.menu a {
+            color       : #999;
+            display     : inline-block;
+        }
+
+        article div.header li.profile-pic a i {
+            display         : inline-block;
+            width           : 30px;
+            height          : 30px;
+            border-radius   : 50%;
+            background-size   : cover;
+        }
+
+        /*---------------------------------------------------------------------------------------------------------------------||
+        -| Div 2 - P
+        -----------------------------------------------------------------------------------------------------------------------||*/
+
+        article p {
+            color           : #000;
+            padding         : 10px 10px;
+            font-size       : 80%;
+        }
+
+        /*---------------------------------------------------------------------------------------------------------------------||
+        -| Div 2 - Articles Media
+        -----------------------------------------------------------------------------------------------------------------------||*/
+
+        article div.media {
+            display     : block;
+            width       : 100%;
+            height      : 450px;
+            background-size : cover;
+        }
+
+
+
+    </style>
+
+    <main>
+        <section>
+            {{SUBPAGE}}
+        </section>
+    </main>
+
+
+
+</div>
+
+<script>window.pageName = 'maestro.admin';</script>
+<script src="/assets/js/babble.js"></script>
+
+</body>
+</html>

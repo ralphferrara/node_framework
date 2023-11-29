@@ -1,0 +1,27 @@
+{
+  "name": "auth.example.com",
+  "version": "0.0.1",
+  "description": "Authorization System",
+  "dependencies": {
+    "linkifyjs"       : "latest",
+    "md5"             : "latest",
+    "moment"          : "latest",
+    "mysql"           : "latest",
+    "querystring"   : "latest",
+    "redis"         : "latest",
+    "sha1"          : "latest",
+    "sanitize-html" : "latest",
+    "sqlstring"     : "latest",
+    "cpu-stat"      : "latest",
+    "websocket"     : "latest",
+    "nodemailer"    : "latest",
+    "twilio"        : "latest",
+    "public-ip"     : "latest",
+    "plivo"         : "latest",
+    "mandrill-api"  : "latest",
+    "url"           : "latest",
+    "page-metadata-parser" : "latest",
+    "domino"        : "latest"
+  },
+  "author": "SCM"
+}

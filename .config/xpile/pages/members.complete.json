@@ -1,0 +1,10 @@
+{
+  "js": [
+    "common/wrapper.dob.js",
+    "common/wrapper.upload.js",
+    "members/complete.js"
+  ],
+  "css": [
+    "members/complete.css"
+  ]
+}

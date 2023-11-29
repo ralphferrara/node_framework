@@ -1,0 +1,18 @@
+{
+  "js": [
+    "common/hammer.js",
+    "common/medialab.var.js",
+    "common/medialab.main.js",
+    "common/medialab.helper.js",
+    "common/medialab.items.js",
+    "common/medialab.zoom.js",
+    "common/medialab.comments.js",
+    "common/medialab.bulk.js",
+    "common/medialab.paging.js",
+    "common/medialab.final.js"
+  ],
+  "css": [
+    "common/medialab.css",
+    "common/results.media.css"
+  ]
+}

@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <meta name="description" content="SEO">
+    <meta name="author" content="SCM">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/assets/css/sites/{{HOST}}/var.site.css?v=1.0">
+    <link rel="stylesheet" href="/assets/css/global/reset.css?v=1.0">
+    <link rel="stylesheet" href="/assets/css/global/elements.css">
+    <link rel="stylesheet" href="/assets/css/global/attributes.css">
+    <link rel="stylesheet" href="/assets/css/global/loader.css">
+    <link rel="stylesheet" href="/assets/css/global/pagelab.css">
+
+    <link rel="stylesheet" href="/assets/css/main/header.css?v=1.0">
+    <link rel="stylesheet" href="/assets/css/main/buttons.css?v=1.0">
+
+    <link rel="stylesheet" href="/assets/css/pages/home.css?v=1.0">
+    <style>
+        *,body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <li class="logo"><img class="logo" src="/assets/img/sites/{{HOST}}/logo/header.png"></li>
+    <li class="notify public">
+        <a id="actionSignup" class="button welcome signup" href="javascript:void(0);" alt="Create a free account">Signup</a>
+        <a id="actionLogin" class="button welcome login" href="javascript:void(0);" alt="Login to your account">Login</a>
+        <button onclick="$('user').testFunction()">Test</button>
+    </li>
+    <li class="notify member">
+        <img class="avatar" src="#">
+        <a href="javascript:void(0);" class="dropdown username"></a>
+    </li>
+</header>
+{{SUBPAGE}}
+
+<div style="line-height:1.4em; border: 1px solid #CCC; position:fixed; background:rgba(0,0,0,0.1); padding:10px; text-align:center; bottom:50px;right:50px;width:400px;height:150px;font-size:12px;z-index:100;">
+    User ID : &nbsp;&nbsp;&nbsp;<b id="myUserID">Pending...</b><br>
+    User Token : <b id="myUserToken">Pending</b><br>
+    Avatar : <b id="myAvatar">Pending</b><br>
+    Username : <b id="myUsername">Pending</b><br>
+    <button id="actionLogout">Logout</button>
+</div>
+
+<footer>
+    Footer
+</footer>
+
+<script>window.pageName = 'home';</script>
+<script src="/assets/js/babble.js?x=QAD"></script>
+</body>
+</html>

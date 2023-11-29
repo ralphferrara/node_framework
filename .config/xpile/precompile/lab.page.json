@@ -1,0 +1,8 @@
+{
+  "js": [
+    "common/pagelab.js"
+  ],
+  "css": [
+    "common/pagelab.css"
+  ]
+}

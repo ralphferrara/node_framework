@@ -1,0 +1,10 @@
+{
+  "js": [
+    "public/social.signup.js",
+    "public/signup.js"
+  ],
+  "css": [
+    "public/login.css",
+    "public/signup.css"
+  ]
+}

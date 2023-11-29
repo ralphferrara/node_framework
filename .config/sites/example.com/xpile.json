@@ -1,0 +1,8 @@
+{
+  "js": {
+    "CDNSITE": "testjs.com"
+  },
+  "css": {
+    "CDNSITE": "test.com"
+  }
+}

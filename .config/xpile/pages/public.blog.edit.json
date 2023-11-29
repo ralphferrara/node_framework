@@ -1,0 +1,9 @@
+{
+  "js": [
+    "common/selection.min.js",
+    "common/wysiwyg.js"
+  ],
+  "css": [
+    "common/wysiwyg.css"
+  ]
+}

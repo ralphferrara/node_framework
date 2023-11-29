@@ -1,0 +1,10 @@
+{
+  "js": [
+    "precompile/lab.page.js",
+    "members/blogs.js",
+    "common/wysiwyg.js"
+  ],
+  "css": [
+    "precompile/lab.page.css"
+  ]
+}

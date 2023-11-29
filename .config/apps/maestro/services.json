@@ -1,0 +1,27 @@
+{
+  "http": {
+    "port" : 8801,
+    "postMax" : 999999,
+    "ssl": {
+      "active": true,
+      "key": "",
+      "cert": ""
+    }
+  },
+  "websockets": {
+      "active": true
+  },
+  "mysql": {
+    "host": "localhost",
+    "user": "",
+    "password": "",
+    "database": "",
+    "charset": "utf8mb4"
+  },
+  "redis": {
+    "host": "127.0.0.1",
+    "port": 6379,
+    "subscriptions": ["BABBLE"]
+  }
+}
+

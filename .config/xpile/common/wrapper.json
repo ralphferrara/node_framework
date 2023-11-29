@@ -1,0 +1,31 @@
+{
+  "js": [
+    "common/jquery.19.1.min.js",
+    "common/moment.min.new.js",
+    "common/jquery.autogrow.min.js",
+    "common/wrapper.growl.js",
+    "common/jquery.shiftselect.js",
+    "common/jquery.slimscroll.min.js",
+    "common/wrapper.confirm.js",
+    "common/wrapper.captcha.js",
+    "common/wrapper.localstorage.js",
+    "common/me.js",
+    "common/wrapper.js",
+    "common/validate.js",
+    "common/notify.js"
+  ],
+  "css": [
+    "common/bootstrap.stripped.css",
+    "common/wrapper.growl.css",
+    "common/wrapper.confirm.css",
+    "common/wrapper.global.css",
+    "common/wrapper.layout.css",
+    "common/wrapper.nav.mobile.css",
+    "common/wrapper.forms.css",
+    "common/wrapper.specials.css",
+    "common/wrapper.pagination.css",
+    "common/wrapper.mobile.css",
+    "common/captcha.css",
+    "common/ads.css"
+  ]
+}

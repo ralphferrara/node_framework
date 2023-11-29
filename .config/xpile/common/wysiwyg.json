@@ -1,0 +1,8 @@
+{
+  "js": [
+    "common/wysiwyg.js"
+  ],
+  "css": [
+    "common/wysiwyg.css"
+  ]
+}

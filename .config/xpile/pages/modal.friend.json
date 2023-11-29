@@ -1,0 +1,8 @@
+{
+  "js": [
+    "modal/modal.friend.js"
+  ],
+  "css": [
+    "modal/modal.friend.css"
+  ]
+}

@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Home</title>
+        <meta name="description" content="SEO">
+        <meta name="author" content="SCM">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/7ab51738eb.js" crossorigin="anonymous"></script>
+
+
+        <link rel="stylesheet" href="/assets/css/sites/{{HOST}}/var.site.css?v=1.0">
+        <link rel="stylesheet" href="/assets/css/global/reset.css?v=1.0">
+        <link rel="stylesheet" href="/assets/css/global/elements.css">
+        <link rel="stylesheet" href="/assets/css/global/attributes.css">
+        <link rel="stylesheet" href="/assets/css/global/loader.css">
+        <link rel="stylesheet" href="/assets/css/global/pagelab.css">
+
+        <link rel="stylesheet" href="/assets/css/main/members.css?v=1.0">
+        <link rel="stylesheet" href="/assets/css/main/buttons.css?v=1.0">
+
+        <link rel="stylesheet" href="/assets/css/members/layout.css">
+        <link rel="stylesheet" href="/assets/css/members/profile.css">
+        <link rel="stylesheet" href="/assets/css/members/filter.css">
+
+        <link rel="stylesheet" href="/assets/css/members/header.css">
+        <link rel="stylesheet" href="/assets/css/members/header.logo.css">
+        <link rel="stylesheet" href="/assets/css/members/header.primary.css">
+        <link rel="stylesheet" href="/assets/css/members/header.secondary.css">
+
+        <link rel="stylesheet" href="/assets/css/members/main.primary.css">
+        <link rel="stylesheet" href="/assets/css/members/main.secondary.css">
+
+        <link rel="stylesheet" href="/assets/css/items/feed.css">
+
+        <link rel="stylesheet" href="/assets/css/elements/overlay.me.css">
+        <link rel="stylesheet" href="/assets/css/elements/overlay.me.publish.css">
+        <link rel="stylesheet" href="/assets/css/elements/overlay.me.search.css">
+        <link rel="stylesheet" href="/assets/css/elements/overlay.me.messages.css">
+        <link rel="stylesheet" href="/assets/css/elements/overlay.me.activity.css">
+        <link rel="stylesheet" href="/assets/css/elements/overlay.me.menu.css">
+
+        <link rel="stylesheet" href="/assets/css/elements/column.members.stats.css">
+
+        <link rel="stylesheet" href="/assets/css/elements/items.messages.css">
+
+
+
+
+    </head>
+    <body class="members publish">
+
+
+        {{OVERLAYPUBLISH}}
+        {{OVERLAYSEARCH}}
+        {{OVERLAYMESSAGES}}
+        {{OVERLAYACTIVITY}}
+        {{OVERLAYMENU}}
+
+        <div class="members">
+            {{MEMBERNAV}}
+            <main>
+                <section>
+
+                    <div class="col col1">
+                        {{COLPROFILE}}
+                        {{FILTERFEED}}
+                    </div>
+
+                    <div class="col col2">
+                        {{FEEDITEMS}}
+                    </div>
+
+                    <div class="col col3">
+                        {{STATS}}
+                    </div>
+
+                </section>
+            </main>
+
+            {{DEBUGUSER}}
+
+        </div>
+
+        <script>window.pageName = 'members';</script>
+        <script src="/assets/js/babble/load.js"></script>
+
+    </body>
+</html>

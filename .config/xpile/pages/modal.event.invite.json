@@ -1,0 +1,8 @@
+{
+  "js": [
+    "modal/modal.event.invite.js"
+  ],
+  "css": [
+    "modal/modal.event.invite.css"
+  ]
+}

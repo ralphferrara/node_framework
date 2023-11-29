@@ -1,0 +1,8 @@
+{
+  "js": [
+    "modal/modal.location.js"
+  ],
+  "css": [
+    "modal/modal.location.css"
+  ]
+}

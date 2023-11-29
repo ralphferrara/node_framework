@@ -1,0 +1,29 @@
+{
+  "js": [
+    "common/wrapper.growl.js",
+    "common/wrapper.confirm.js",
+    "common/jquery.mobile.swipe.min.js",
+    "common/moment.min.js",
+    "common/wrapper.js",
+    "common/wrapper.forms.js",
+    "common/validate.js",
+    "precompile/lab.media.js",
+    "precompile/lab.page.js",
+    "editor/editor.js",
+    "common/wrapper.autofill.js",
+    "common/wrapper.uploader.js",
+    "staff/staff.js"
+  ],
+  "css": [
+    "common/wrapper.growl.css",
+    "common/wrapper.confirm.css",
+    "common/wrapper.global.css",
+    "common/wrapper.pagination.css",
+    "common/wrapper.mobile.css",
+    "common/wrapper.forms.css",
+    "precompile/lab.page.css",
+    "editor/editor.css",
+    "editor/table.css",
+    "staff/staff.css"
+  ]
+}

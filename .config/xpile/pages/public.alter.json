@@ -1,0 +1,8 @@
+{
+  "js": [
+    "public/alter.js"
+  ],
+  "css": [
+    "public/alter.css"
+  ]
+}

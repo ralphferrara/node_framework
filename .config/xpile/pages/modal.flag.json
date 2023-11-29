@@ -1,0 +1,8 @@
+{
+  "js": [
+    "modal/modal.flag.js"
+  ],
+  "css": [
+    "modal/modal.flag.css"
+  ]
+}

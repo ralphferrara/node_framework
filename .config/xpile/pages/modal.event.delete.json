@@ -1,0 +1,8 @@
+{
+  "js": [
+    "modal/modal.event.delete.js"
+  ],
+  "css": [
+    "modal/modal.event.delete.css"
+  ]
+}

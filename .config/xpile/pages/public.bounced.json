@@ -1,0 +1,8 @@
+{
+  "js": [
+    "public/bounced.js"
+  ],
+  "css": [
+    "public/bounced.css"
+  ]
+}

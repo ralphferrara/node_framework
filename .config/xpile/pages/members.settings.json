@@ -1,0 +1,13 @@
+{
+  "js": [
+    "common/gmaps.js",
+    "common/selection.min.js",
+    "common/wysiwyg.js",
+    "members/settings.js"
+  ],
+  "css": [
+    "common/forms.css",
+    "common/wysiwyg.css",
+    "members/settings.css"
+  ]
+}

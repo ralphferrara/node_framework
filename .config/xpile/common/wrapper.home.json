@@ -1,0 +1,21 @@
+{
+  "js": [
+    "common/jquery.19.1.min.js",
+    "common/wrapper.localstorage.js",
+    "common/wrapper.confirm.js",
+    "common/wrapper.js",
+    "common/me.js",
+    "common/notify.js",
+    "public/home.js",
+    "common/facebook.button.js"
+  ],
+  "css": [
+    "common/bootstrap.css",
+    "common/wrapper.confirm.css",
+    "common/wrapper.global.css",
+    "common/wrapper.layout.css",
+    "common/wrapper.nav.mobile.css",
+    "common/wrapper.forms.css",
+    "public/home.css"
+  ]
+}

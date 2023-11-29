@@ -1,0 +1,7 @@
+{
+  "auth.popup"                  : "secondary/auth.popup.html",
+  "captcha"                     : "secondary/captcha.html",
+  "dropzone"                    : "plugs/plug.dropzone.html",
+  "popup"                       : "plugs/plug.popup.html",
+  "popup.members.publish"       : "elements/popup.members.publish.html"
+}

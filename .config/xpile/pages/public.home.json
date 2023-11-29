@@ -1,0 +1,8 @@
+{
+  "js": [
+    "public/home.js"
+  ],
+  "css": [
+    "public/home.css"
+  ]
+}

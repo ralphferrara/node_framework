@@ -1,0 +1,8 @@
+{
+  "js": [
+    "members/certification.js"
+  ],
+  "css": [
+    "members/certification.css"
+  ]
+}

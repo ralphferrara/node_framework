@@ -1,0 +1,8 @@
+{
+  "js": [
+    "public/location.create.js"
+  ],
+  "css": [
+    "public/location.create.css"
+  ]
+}

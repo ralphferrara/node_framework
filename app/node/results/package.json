@@ -1,0 +1,10 @@
+{
+  "name": "auth.example.com",
+  "version": "0.0.1",
+  "description": "Results System",
+  "dependencies": {
+    "redis"         : "latest",
+    "mongodb"       : "latest"
+  },
+  "author": "SCM"
+}

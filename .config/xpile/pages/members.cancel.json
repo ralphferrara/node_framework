@@ -1,0 +1,8 @@
+{
+  "js": [
+    "members/cancel.js"
+  ],
+  "css": [
+    "members/cancel.css"
+  ]
+}
